@@ -26,7 +26,23 @@ const postagens=[
   },  
 ]
 
+const colors=["red", "white", "green", "yellow", "purple", "black", "cyan" ]
+
 function App() {
+  const [contador, setContador] = useState(0)
+  function maisCor(){
+    if(contador>= colors.length){
+    }else{
+      setContador(contador+1)
+    }
+  }
+  function menosCor(){
+    if(contador<=0){
+      setContador(colors.length-1)
+    }else{
+      setContador(contador-1)
+    }
+  }
   const [count, setCount] = useState(0)
 
   return (
@@ -36,29 +52,40 @@ function App() {
     <div>
     <h1 className='titulo'>BLOG DO FELYPE</h1>
     </div>
-    <Card name={postagens[0].name}
+    <Card cor={colors[contador]}
+    name={postagens[0].name}
     img={postagens[0].img}
     text={postagens[0].text}
     data={postagens[0].data}
     />
     
-    <Card name={postagens[1].name}
+    <Card cor={colors[contador]}
+    name={postagens[1].name}
     img={postagens[1].img}
     text={postagens[1].text}
     data={postagens[1].data}
     />
     
-    <Card name={postagens[2].name}
+    <Card cor={colors[contador]}
+    name={postagens[2].name}
     img={postagens[2].img}
     text={postagens[2].text}
     data={postagens[2].data}
     />
 
-   <Card name={postagens[3].name}
+   <Card cor={colors[contador]}
+    name={postagens[3].name}
     img={postagens[3].img}
     text={postagens[3].text}
     data={postagens[3].data}
     />
+
+<div>
+  <p>Total de postagens:{contador}</p>
+  <button onClick={maisCor}>aumentar postagens</button>
+  <button onClick={menosCor}>diminuir postagens</button>
+</div>
+
     </div>
 
     </>

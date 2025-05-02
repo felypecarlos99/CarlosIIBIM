@@ -1,0 +1,59 @@
+.body{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .titulo{
+   color: red;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-family: "Abel", sans-serif;
+  }
+    
+
+.card{
+    width: 500px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    border: 3px rgb(0, 0, 0) solid;
+    border-radius: 10px;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 5px 5px 5px red;
+    margin-bottom: 10px;
+  }
+  
+  .primeiros{
+    width: 120px;
+    display: flex;
+    flex-direction: row;
+    margin-right:  380px;
+    margin-top: 20px;
+  }
+  
+  .imgcard{
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+  }
+  
+  .texto{
+    padding: 5px;
+    font-family: "Tagesschrift", system-ui;
+  }
+  
+  .ultimos{
+    width: 500px;
+    height: 100px;
+    margin: 0;
+    padding: 0 ;
+  }
+  
